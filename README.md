@@ -94,9 +94,9 @@ Java Testing Ecosystem
 
 ## 从仓库的根目录构建模块
 
-要从仓库的根目录构建特定模块，请在根目录中运行命令：`mvn clean install --pl ddd,annotations -Punit`。
+要从仓库的根目录构建特定模块，请在根目录中运行命令：`mvn clean install --pl tdd,mockserver -Punit`。
 
-这里的ddd和annotations是我们要构建的模块，unit是要执行的测试类型的Maven profile。
+这里的tdd和mockserver是我们要构建的模块，unit是要执行的测试类型的Maven profile。
 
 ## 运行Spring Boot模块
 
