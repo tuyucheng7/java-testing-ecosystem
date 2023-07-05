@@ -2,14 +2,14 @@ Java Testing Ecosystem
 ==============
 
 [![Java 17](https://img.shields.io/badge/java-17-green)](https://img.shields.io/badge/java-17-blue)
-![example workflow](https://github.com/tu-yucheng/taketoday-tutorial4j/actions/workflows/maven-ci.yml/badge.svg)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_taketoday-tutorial4j)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=coverage)](https://sonarcloud.io/dashboard?id=tu-yucheng_taketoday-tutorial4j)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=ncloc)](https://sonarcloud.io/project/overview?id=tu-yucheng_taketoday-tutorial4j)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=bugs)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_taketoday-tutorial4j)
+![example workflow](https://github.com/tu-yucheng/java-testing-ecosystem/actions/workflows/maven-ci.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_java-testing-ecosystem)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=coverage)](https://sonarcloud.io/dashboard?id=tu-yucheng_java-testing-ecosystem)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=ncloc)](https://sonarcloud.io/project/overview?id=tu-yucheng_java-testing-ecosystem)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=bugs)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_java-testing-ecosystem)
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
-这个项目是**一个小型和重点教程的集合**，每个教程都涵盖了Java生态系统中一个明确定义的开发领域。当然，其中一个重点在于Spring框架、Spring Data、Spring Boot、Spring Cloud和Spring Security。除了Spring之外，这里的模块还涵盖了Java的许多方面。
+这个项目包含Java生态系统中各种测试框架和库的演示代码，其中的重点在于单元测试框架、Mock框架、断言库、BDD、Selenium。除了这些之外，其中的模块还涵盖了大量的测试工具库。
 
 **项目博客**：[tu-yucheng.github.io](https://tu-yucheng.github.io/)。
 
