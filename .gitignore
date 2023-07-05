@@ -1,0 +1,84 @@
+*/bin/*
+bin/
+
+*.class
+
+*banner.txt
+*README-backup.md
+/.fleet/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.settings/
+*.project
+*.classpath
+.prefs
+*.prefs
+.metadata/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+out/
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store
+
+# Maven
+log/*
+target/
+
+# Gradle
+.gradle/
+
+.recommenders/
+
+20171220-JMeter.csv
+
+.factorypath
+dependency-reduced-pom.xml
+*.so
+*.dylib
+*.dll
+
+jmeter/src/main/resources/*-JMeter.csv
+jmeter/src/main/resources/*-Basic*.csv
+jmeter/src/main/resources/*-JMeter*.csv
+jmeter/src/main/resources/*ReportsDashboard*.csv
+jmeter/src/main/resources/dashboard/*ReportsDashboard*.csv
+jmeter/src/main/resources/*FileExtractionExample.csv
+jmeter/src/main/resources/*_Summary-Report.csv
+
+**/node_modules/
+**/dist
+**/tmp
+**/out-tsc
+**/nbproject/
+**/nb-configuration.xml
+
+/report-*.json
+transaction.log
+*-shell.log
+customers.xml
+
+logs/
+
+# SDKMan
+.sdkmanrc
+
+# Localstack
+**/.localstack
+
+#web-framework/ninja
+devDb*.db
+
+#jaxb
+*.xjb

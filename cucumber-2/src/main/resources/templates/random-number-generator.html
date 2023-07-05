@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Random Number Generator</title>
+
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/css/bootstrap.min.css}"/>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <h1 class="navbar-brand mb-10 h1">Random Number Generator</h1>
+    </div>
+</nav>
+<div class="container" role="main">
+    <div>
+        <form action="#" id="random" method="post" name="random"
+              th:action="@{/random-number-generator}" th:object="${randomNumberQuery}">
+
+            <div class="row mt-10">
+                <label class="col-sm-1 control-label" for="min">Min:</label>
+                <div class="col-sm-3">
+                    <input autofocus class="form-control" id="min" placeholder="min" required th:field="*{min}"
+                           type="text">
+                </div>
+                <label class="col-sm-1 control-label" for="max">Max:</label>
+                <div class="col-sm-3">
+                    <input autofocus class="form-control" id="max" placeholder="max" required th:field="*{max}"
+                           type="text">
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-primary" id="generate" type="submit">Generate</button>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="row mt-10">
+            <p>Result: </p>
+            <p class="display-1 font-weight-bold" id="result" th:text="${randomNumberQuery.randomNumber}"></p>
+
+        </div>
+
+        <script th:src="@{webjars/bootstrap/js/bootstrap.min.js}" type="text/javascript"></script>
+    </div>
+</div>
+</body>
+</html>
