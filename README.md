@@ -3,10 +3,10 @@ Java Testing Ecosystem
 
 [![Java 17](https://img.shields.io/badge/java-17-green)](https://img.shields.io/badge/java-17-blue)
 ![example workflow](https://github.com/tu-yucheng/java-testing-ecosystem/actions/workflows/maven-ci.yml/badge.svg)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_java-testing-ecosystem)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=coverage)](https://sonarcloud.io/dashboard?id=tu-yucheng_java-testing-ecosystem)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=ncloc)](https://sonarcloud.io/project/overview?id=tu-yucheng_java-testing-ecosystem)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_taketoday-tutorial4j&metric=bugs)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_java-testing-ecosystem)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_java-testing-ecosystem&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_java-testing-ecosystem)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_java-testing-ecosystem&metric=coverage)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_java-testing-ecosystem)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_java-testing-ecosystem&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_java-testing-ecosystem)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_java-testing-ecosystem&metric=bugs)](https://sonarcloud.io/summary/new_code?id=tu-yucheng_java-testing-ecosystem)
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 这个项目包含Java生态系统中各种测试框架和库的演示代码，其中的重点在于单元测试框架、Mock框架、断言库、BDD、Selenium。除了这些之外，其中的模块还涵盖了大量的测试工具库。
