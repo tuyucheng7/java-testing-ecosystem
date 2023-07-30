@@ -7,9 +7,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ProductServiceUnitTest {
 
    @Test
-   void givenOriginalPrice_whenGetSalePrice_thenReturnsDiscountedPrice() {
+   public void givenOriginalPrice_whenGetSalePrice_thenReturnsDiscountedPrice() {
       ProductService productService = new ProductService();
-      double salePrice = productService.getSalePrice(100);
-      assertEquals(75, salePrice);
+      double salePrice = productService.getSalePrice(100, true);
+      assertEquals(salePrice, 75);
+   }
+
+   @Test
+   public void givenOriginalPrice_whenGetSalePriceWithFlagFalse_thenReturnsDiscountedPrice() {
+      ProductService productService = new ProductService();
+      double salePrice = productService.getSalePrice(100, false);
+      assertEquals(salePrice, 100);
    }
 }
