@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 @Component
 public class DataProvider {
 
-   private final List<String> memory = Stream.of("baeldung", "java", "dummy").collect(Collectors.toList());
+   private final List<String> memory = Stream.of("tuyucheng", "java", "dummy").collect(Collectors.toList());
 
    public Stream<String> getValues() {
       return memory.stream();

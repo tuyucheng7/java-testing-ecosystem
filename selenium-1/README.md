@@ -14,7 +14,7 @@
 ## 注意
 
 要运行文章`修复Selenium WebDriver可执行路径错误`
-的实时测试，请按照[修复Selenium WebDriver可执行路径错误](https://www.baeldung.com/java-selenium-webdriver-path-error#manual-setup)
+的实时测试，请按照[修复Selenium WebDriver可执行路径错误](http://tu-yucheng.github.io/selenium/2023/05/10/java-selenium-webdriver-path-error.html)
 手动设置描述下载提到的3个驱动程序并将它们放在src/test/resources目录中。
 
 - 更多文章： [[next -->]](../selenium-2/README.md)

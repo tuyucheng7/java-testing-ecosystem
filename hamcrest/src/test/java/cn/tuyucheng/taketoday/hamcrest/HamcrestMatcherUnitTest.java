@@ -63,20 +63,20 @@ public class HamcrestMatcherUnitTest {
 
    @Test
    public void givenBean_whenHasValue_thenCorrect() {
-      Person person = new Person("Baeldung", "New York");
+      Person person = new Person("Tuyucheng", "New York");
       assertThat(person, hasProperty("name"));
    }
 
    @Test
    public void givenBean_whenHasCorrectValue_thenCorrect() {
-      Person person = new Person("Baeldung", "New York");
+      Person person = new Person("Tuyucheng", "New York");
       assertThat(person, hasProperty("address", equalTo("New York")));
    }
 
    @Test
    public void given2Beans_whenHavingSameValues_thenCorrect() {
-      Person person1 = new Person("Baeldung", "New York");
-      Person person2 = new Person("Baeldung", "New York");
+      Person person1 = new Person("Tuyucheng", "New York");
+      Person person2 = new Person("Tuyucheng", "New York");
       assertThat(person1, samePropertyValuesAs(person2));
    }
 
@@ -159,22 +159,22 @@ public class HamcrestMatcherUnitTest {
    @Test
    public void givenMapAndKey_whenKeyFoundInMap_thenCorrect() {
       Map<String, String> map = new HashMap<>();
-      map.put("blogname", "baeldung");
+      map.put("blogname", "tuyucheng");
       assertThat(map, hasKey("blogname"));
    }
 
    @Test
    public void givenMapAndEntry_whenEntryFoundInMap_thenCorrect() {
       Map<String, String> map = new HashMap<>();
-      map.put("blogname", "baeldung");
-      assertThat(map, hasEntry("blogname", "baeldung"));
+      map.put("blogname", "tuyucheng");
+      assertThat(map, hasEntry("blogname", "tuyucheng"));
    }
 
    @Test
    public void givenMapAndValue_whenValueFoundInMap_thenCorrect() {
       Map<String, String> map = new HashMap<>();
-      map.put("blogname", "baeldung");
-      assertThat(map, hasValue("baeldung"));
+      map.put("blogname", "tuyucheng");
+      assertThat(map, hasValue("tuyucheng"));
    }
 
    @Test

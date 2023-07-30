@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
 class SystemLambdaComparisonUnitTest {
    @SystemStub
    private EnvironmentVariables environmentVariables =
-         new EnvironmentVariables("ADDRESS", "https://www.baeldung.com");
+         new EnvironmentVariables("ADDRESS", "https://www.tuyucheng.com");
 
    @SystemStub
    private SystemProperties systemProperties = new SystemProperties();
@@ -31,11 +31,11 @@ class SystemLambdaComparisonUnitTest {
    @Test
    void multipleSystemLambdas() throws Exception {
       restoreSystemProperties(() -> {
-         withEnvironmentVariable("URL", "https://www.baeldung.com")
+         withEnvironmentVariable("URL", "https://www.tuyucheng.com")
                .execute(() -> {
                   System.setProperty("log_dir", "test/resources");
                   assertEquals("test/resources", System.getProperty("log_dir"));
-                  assertEquals("https://www.baeldung.com", System.getenv("URL"));
+                  assertEquals("https://www.tuyucheng.com", System.getenv("URL"));
                });
       });
    }
@@ -44,6 +44,6 @@ class SystemLambdaComparisonUnitTest {
    void multipleSystemStubs() {
       System.setProperty("log_dir", "test/resources");
       assertEquals("test/resources", System.getProperty("log_dir"));
-      assertEquals("https://www.baeldung.com", System.getenv("ADDRESS"));
+      assertEquals("https://www.tuyucheng.com", System.getenv("ADDRESS"));
    }
 }

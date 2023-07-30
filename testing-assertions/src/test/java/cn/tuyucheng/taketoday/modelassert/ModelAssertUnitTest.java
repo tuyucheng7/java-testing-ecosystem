@@ -25,12 +25,12 @@ import static org.mockito.Mockito.verify;
 
 class ModelAssertUnitTest {
    private static final String ACTUAL_JSON = "{" +
-         "\"name\": \"Baeldung\"," +
+         "\"name\": \"Tuyucheng\"," +
          "\"isOnline\": true," +
          "\"topics\": [ \"Java\", \"Spring\", \"Kotlin\", \"Scala\", \"Linux\" ]" +
          "}";
 
-   private static final Path PATH_TO_EXPECTED = Paths.get("src", "test", "resources", "modelassert", "baeldung.json");
+   private static final Path PATH_TO_EXPECTED = Paths.get("src", "test", "resources", "modelassert", "tuyucheng.json");
    private DataService mockDataService = mock(DataService.class);
 
    private static <T> WhereDsl<T> idsAreGuids(WhereDsl<T> where) {
@@ -40,7 +40,7 @@ class ModelAssertUnitTest {
    @Test
    void givenJson_thenNameIsBaeldung() {
       JsonAssertions.assertJson(ACTUAL_JSON)
-            .at("/name").isText("Baeldung");
+            .at("/name").isText("Tuyucheng");
    }
 
    @Test
@@ -52,7 +52,7 @@ class ModelAssertUnitTest {
    @Test
    void givenJson_thenCanMakeMultipleAssertions() {
       JsonAssertions.assertJson(ACTUAL_JSON)
-            .at("/name").isText("Baeldung")
+            .at("/name").isText("Tuyucheng")
             .at("/topics/1").isText("Spring");
    }
 
@@ -73,24 +73,24 @@ class ModelAssertUnitTest {
    @Test
    void givenMap_thenCanCompareToYaml() {
       Map<String, String> map = new HashMap<>();
-      map.put("name", "baeldung");
+      map.put("name", "tuyucheng");
 
       JsonAssertions.assertJson(map)
-            .isEqualToYaml("name: baeldung");
+            .isEqualToYaml("name: tuyucheng");
    }
 
    @Test
    void givenYaml_thenCanCompareToMap() {
       Map<String, String> map = new HashMap<>();
-      map.put("name", "baeldung");
+      map.put("name", "tuyucheng");
 
-      JsonAssertions.assertYaml("name: baeldung")
+      JsonAssertions.assertYaml("name: tuyucheng")
             .isEqualTo(map);
    }
 
    @Test
    void canProduceHamcrestMatcher() {
-      Matcher<String> matcher = JsonAssertions.json().at("/name").hasValue("Baeldung");
+      Matcher<String> matcher = JsonAssertions.json().at("/name").hasValue("Tuyucheng");
 
       MatcherAssert.assertThat(ACTUAL_JSON, matcher);
    }
@@ -99,7 +99,7 @@ class ModelAssertUnitTest {
    void givenJson_thenCanAssertWithMatcherAssert() {
 
       MatcherAssert.assertThat(ACTUAL_JSON, JsonAssertions.json()
-            .at("/name").hasValue("Baeldung")
+            .at("/name").hasValue("Tuyucheng")
             .at("/topics/1").isText("Spring"));
    }
 
@@ -115,7 +115,7 @@ class ModelAssertUnitTest {
 
       verify(mockDataService)
             .isUserLoggedIn(argThat(JsonAssertions.json()
-                  .at("/name").isText("Baeldung")
+                  .at("/name").isText("Tuyucheng")
                   .toArgumentMatcher()));
    }
 
@@ -143,7 +143,7 @@ class ModelAssertUnitTest {
    @Test
    void givenTextNode_canAssertContents() {
       JsonAssertions.assertJson(ACTUAL_JSON)
-            .at("/name").textContains("ael");
+            .at("/name").textContains("uyu");
    }
 
    @Test
@@ -227,8 +227,8 @@ class ModelAssertUnitTest {
 
    @Test
    void givenActualHasExtraValue_thenIgnoreIt() {
-      String actualJson = "{user:{name: \"Baeldung\", url:\"http://www.baeldung.com\"}}";
-      String expectedJson = "{user:{name: \"Baeldung\"}}";
+      String actualJson = "{user:{name: \"Tuyucheng\", url:\"http://www.tuyucheng.com\"}}";
+      String expectedJson = "{user:{name: \"Tuyucheng\"}}";
 
       JsonAssertions.assertJson(actualJson)
             .where().at("/user/url").isIgnored()

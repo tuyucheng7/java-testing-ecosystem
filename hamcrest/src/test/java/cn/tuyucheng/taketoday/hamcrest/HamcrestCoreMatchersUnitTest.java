@@ -140,7 +140,7 @@ class HamcrestCoreMatchersUnitTest {
    @Test
    void givenTestInput_WhenUsingHasItemInCollection() {
       // GIVEN
-      List<String> list = Lists.newArrayList("java", "spring", "baeldung");
+      List<String> list = Lists.newArrayList("java", "spring", "tuyucheng");
 
       // ASSERT
       assertThat(list, hasItem("java"));
@@ -150,10 +150,10 @@ class HamcrestCoreMatchersUnitTest {
    @Test
    void givenTestInput_WhenUsingHasItemsInCollection() {
       // GIVEN
-      List<String> list = Lists.newArrayList("java", "spring", "baeldung");
+      List<String> list = Lists.newArrayList("java", "spring", "tuyucheng");
 
       // ASSERT
-      assertThat(list, hasItems("java", "baeldung"));
+      assertThat(list, hasItems("java", "tuyucheng"));
       assertThat(list, hasItems(isA(String.class), endsWith("ing")));
    }
 
@@ -178,7 +178,7 @@ class HamcrestCoreMatchersUnitTest {
       String testString = "Hamcrest Core";
 
       // ASSERT
-      assertThat(testString, anyOf(startsWith("Ham"), containsString("baeldung")));
+      assertThat(testString, anyOf(startsWith("Ham"), containsString("tuyucheng")));
    }
 
    @Test
