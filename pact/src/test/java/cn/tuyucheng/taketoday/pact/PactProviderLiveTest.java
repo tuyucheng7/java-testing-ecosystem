@@ -27,7 +27,7 @@ public class PactProviderLiveTest {
 
    @BeforeEach
    void before(PactVerificationContext context) {
-      context.setTarget(new HttpTestTarget("localhost", 8081, "/spring-rest"));
+      context.setTarget(new HttpTestTarget("localhost", 8082, "/spring-rest"));
    }
 
    @TestTemplate
