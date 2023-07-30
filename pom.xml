@@ -393,6 +393,7 @@
             <module>powermock</module>
             <module>rest-assured</module>
             <module>rest-testing</module>
+            <module>selenide</module>
             <module>selenium-junit-testng</module>
             <module>selenium-webdriver</module>
             <module>serenity</module>
@@ -483,6 +484,7 @@
             <module>powermock</module>
             <module>rest-assured</module>
             <module>rest-testing</module>
+            <module>selenide</module>
             <module>selenium-junit-testng</module>
             <module>selenium-webdriver</module>
             <module>serenity</module>
@@ -555,6 +557,7 @@
             <module>powermock</module>
             <module>rest-assured</module>
             <module>rest-testing</module>
+            <module>selenide</module>
             <module>selenium-junit-testng</module>
             <module>selenium-webdriver</module>
             <module>serenity</module>
