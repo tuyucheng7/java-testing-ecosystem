@@ -394,8 +394,8 @@
             <module>rest-assured</module>
             <module>rest-testing</module>
             <module>selenide</module>
-            <module>selenium-junit-testng</module>
-            <module>selenium-webdriver</module>
+            <module>selenium-1</module>
+            <module>selenium-2</module>
             <module>serenity</module>
             <module>spring-rest-testing</module>
             <module>spring-testing-1</module>
@@ -485,8 +485,8 @@
             <module>rest-assured</module>
             <module>rest-testing</module>
             <module>selenide</module>
-            <module>selenium-junit-testng</module>
-            <module>selenium-webdriver</module>
+            <module>selenium-1</module>
+            <module>selenium-2</module>
             <module>serenity</module>
             <module>spring-rest-testing</module>
             <module>spring-testing-1</module>
@@ -558,8 +558,8 @@
             <module>rest-assured</module>
             <module>rest-testing</module>
             <module>selenide</module>
-            <module>selenium-junit-testng</module>
-            <module>selenium-webdriver</module>
+            <module>selenium-1</module>
+            <module>selenium-2</module>
             <module>serenity</module>
             <module>spring-rest-testing</module>
             <module>spring-testing-1</module>
