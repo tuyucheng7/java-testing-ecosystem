@@ -2,10 +2,18 @@ package cn.tuyucheng.taketoday.reports;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.*;
+import org.testng.IReporter;
+import org.testng.ISuite;
+import org.testng.ISuiteResult;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.xml.XmlSuite;
 
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -68,20 +76,14 @@ public class CustomisedReports implements IReporter {
    }
 
    private Function<ITestResult, String> testResultToResultRow(String testName, String suiteName) {
-      return testResult -> {
-         switch (testResult.getStatus()) {
-            case ITestResult.FAILURE:
-               return String.format(ROW_TEMPLATE, "danger", suiteName, testName, testResult.getName(), "FAILED", "NA");
-
-            case ITestResult.SUCCESS:
-               return String.format(ROW_TEMPLATE, "success", suiteName, testName, testResult.getName(), "PASSED", String.valueOf(testResult.getEndMillis() - testResult.getStartMillis()));
-
-            case ITestResult.SKIP:
-               return String.format(ROW_TEMPLATE, "warning", suiteName, testName, testResult.getName(), "SKIPPED", "NA");
-
-            default:
-               return "";
-         }
+      return testResult -> switch (testResult.getStatus()) {
+         case ITestResult.FAILURE ->
+               String.format(ROW_TEMPLATE, "danger", suiteName, testName, testResult.getName(), "FAILED", "NA");
+         case ITestResult.SUCCESS ->
+               String.format(ROW_TEMPLATE, "success", suiteName, testName, testResult.getName(), "PASSED", testResult.getEndMillis() - testResult.getStartMillis());
+         case ITestResult.SKIP ->
+               String.format(ROW_TEMPLATE, "warning", suiteName, testName, testResult.getName(), "SKIPPED", "NA");
+         default -> "";
       };
    }
 
