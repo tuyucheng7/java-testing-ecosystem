@@ -38,7 +38,7 @@ class ModelAssertUnitTest {
    }
 
    @Test
-   void givenJson_thenNameIsBaeldung() {
+   void givenJson_thenNameIsTuyucheng() {
       JsonAssertions.assertJson(ACTUAL_JSON)
             .at("/name").isText("Tuyucheng");
    }
