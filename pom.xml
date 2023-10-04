@@ -387,6 +387,8 @@
             <module>mockito-2</module>
             <module>mockito-simple</module>
             <module>mockito-spring</module>
+            <module>mocks-1</module>
+            <module>mocks-2</module>
             <module>mockserver</module>
             <module>pact</module>
             <module>parallel-tests-junit</module>
@@ -479,6 +481,8 @@
             <module>mockito-2</module>
             <module>mockito-simple</module>
             <module>mockito-spring</module>
+            <module>mocks-1</module>
+            <module>mocks-2</module>
             <module>mockserver</module>
             <module>pact</module>
             <module>parallel-tests-junit</module>
@@ -553,6 +557,8 @@
             <module>mockito-2</module>
             <module>mockito-simple</module>
             <module>mockito-spring</module>
+            <module>mocks-1</module>
+            <module>mocks-2</module>
             <module>mockserver</module>
             <module>pact</module>
             <module>parallel-tests-junit</module>
