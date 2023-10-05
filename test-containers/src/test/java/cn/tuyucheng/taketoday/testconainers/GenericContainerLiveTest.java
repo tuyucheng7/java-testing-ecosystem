@@ -22,7 +22,7 @@ public class GenericContainerLiveTest {
                      + "\"HTTP/1.1 200 OK\n\nHello World!\" | nc -l -p 80; done");
 
    @Test
-   public void givenSimpleWebServerContainer_whenGetReuqest_thenReturnsResponse()
+   public void givenSimpleWebServerContainer_whenGetRequest_thenReturnsResponse()
          throws Exception {
       String address = "http://"
             + simpleWebServer.getContainerIpAddress()

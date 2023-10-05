@@ -20,7 +20,7 @@ public class DockerComposeContainerLiveTest {
                .withExposedService("simpleWebServer_1", 80);
 
    @Test
-   public void givenSimpleWebServerContainer_whenGetReuqest_thenReturnsResponse()
+   public void givenSimpleWebServerContainer_whenGetRequest_thenReturnsResponse()
          throws Exception {
       String address = "http://" + compose.getServiceHost("simpleWebServer_1", 80)
             + ":" + compose.getServicePort("simpleWebServer_1", 80);

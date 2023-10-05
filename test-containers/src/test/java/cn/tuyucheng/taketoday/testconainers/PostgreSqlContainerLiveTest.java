@@ -18,7 +18,7 @@ public class PostgreSqlContainerLiveTest {
    public PostgreSQLContainer postgresContainer = new PostgreSQLContainer();
 
    @Test
-   public void whenSelectQueryExecuted_thenResulstsReturned() throws Exception {
+   public void whenSelectQueryExecuted_thenResultsReturned() throws Exception {
       ResultSet resultSet = performQuery(postgresContainer, "SELECT 1");
       resultSet.next();
       int result = resultSet.getInt(1);
