@@ -44,6 +44,7 @@ public class RandomNumberGeneratorSteps {
 
    @Then("I should receive a random number between {int} and {int}")
    public void iShouldReceiveARandomNumberBetweenAnd(int min, int max) {
-      assertTrue(Integer.parseInt(Page.getPage(RandomNumberGeneratorPage.class).getResult()) >= min && Integer.parseInt(Page.getPage(RandomNumberGeneratorPage.class).getResult()) <= max);
+      assertTrue(Integer.parseInt(Page.getPage(RandomNumberGeneratorPage.class).getResult())
+            >= min && Integer.parseInt(Page.getPage(RandomNumberGeneratorPage.class).getResult()) <= max);
    }
 }

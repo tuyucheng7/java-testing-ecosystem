@@ -10,7 +10,6 @@ public class RandomNumberGeneratorServiceUnitTest {
 
    @Test
    public void generateRandomNumberReturnsOK() {
-
       int actual = tested.generateRandomNumber(1, 5);
       assertTrue(actual >= 1 && actual <= 5);
    }

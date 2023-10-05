@@ -24,5 +24,4 @@ public class Page {
    WebDriverWait getWait() {
       return new WebDriverWait(driver, DEFAULT_WAIT_SECONDS);
    }
-
 }

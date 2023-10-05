@@ -14,12 +14,8 @@ import java.util.List;
 
 public class ScenarioReport {
 
-   private List<String> messages = new ArrayList<>();
-   private ByteArrayOutputStream restLogOutputStream = new ByteArrayOutputStream();
-
-   public void addMessage(String message) {
-      messages.add(message);
-   }
+   private final List<String> messages = new ArrayList<>();
+   private final ByteArrayOutputStream restLogOutputStream = new ByteArrayOutputStream();
 
    public PrintStream getRestLogPrintStream() {
       return new PrintStream(restLogOutputStream);

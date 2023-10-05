@@ -32,6 +32,4 @@ public class HealthSteps {
    public void shouldReceiveANonEmptyBody() {
       context.response.then().body(Matchers.notNullValue());
    }
-
-
 }

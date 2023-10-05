@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -48,11 +48,11 @@ public class ScenarioContextUI {
    }
 
    public String getRandomNumberUrl() {
-      return "http://" + getServiceBaseUrl() + RANDOM_NUMBER_URL;
+      return STR."http://\{getServiceBaseUrl()}\{RANDOM_NUMBER_URL}";
    }
 
    private String getServiceBaseUrl() {
-      return CucumberEnvironment.getServiceHost() + ":" + Integer.toString(port);
+      return STR."\{CucumberEnvironment.getServiceHost()}:\{port}";
    }
 
    /**
@@ -74,5 +74,4 @@ public class ScenarioContextUI {
             .orElseGet(ScenarioContextUI::getLocalChromeDriver);
       return driver;
    }
-
 }

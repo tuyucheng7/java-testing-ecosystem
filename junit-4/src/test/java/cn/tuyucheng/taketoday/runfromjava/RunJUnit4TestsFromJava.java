@@ -66,11 +66,8 @@ public class RunJUnit4TestsFromJava {
    }
 
    public static void resultReport(Result result) {
-      System.out.println("Finished. Result: Failures: " +
-            result.getFailureCount() + ". Ignored: " +
-            result.getIgnoreCount() + ". Tests run: " +
-            result.getRunCount() + ". Time: " +
-            result.getRunTime() + "ms.");
+      System.out.println(STR.
+            "Finished. Result: Failures: \{result.getFailureCount()}. Ignored: \{result.getIgnoreCount()}. Tests run: \{result.getRunCount()}. Time: \{result.getRunTime()}ms.");
    }
 
    public static void main(String[] args) {

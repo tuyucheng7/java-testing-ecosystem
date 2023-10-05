@@ -38,4 +38,3 @@ public class RandomNumberGeneratorPage extends Page {
       return result.getText();
    }
 }
-
