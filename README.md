@@ -90,7 +90,7 @@ Java Testing Ecosystem
 
 要构建特定模块，请在模块目录中运行命令：`mvn clean install`。
 
-你的模块可能是父模块的一部分，例如`parent-boot-2`，`parent-spring-5`等，然后你需要先构建父模块，这样才能构建你的模块。我们创建了一个`parents` profile，你可以使用它来构建父模块，只需按以下方式运行profile：`mvn clean install -Pparents`。
+你的模块可能是父模块的一部分，例如`parent-boot-3`，`parent-spring-5`等，然后你需要先构建父模块，这样才能构建你的模块。我们创建了一个`parents` profile，你可以使用它来构建父模块，只需按以下方式运行profile：`mvn clean install -Pparents`。
 
 ## 从仓库的根目录构建模块
 

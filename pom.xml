@@ -352,7 +352,7 @@
          <modules>
             <module>parent-java</module>
             <module>parent-spring-5</module>
-            <module>parent-boot-2</module>
+            <module>parent-boot-3</module>
             <module>jacoco-aggregate-report</module>
 
             <module>allure-junit-5</module>
@@ -446,7 +446,7 @@
          <modules>
             <module>parent-java</module>
             <module>parent-spring-5</module>
-            <module>parent-boot-2</module>
+            <module>parent-boot-3</module>
             <module>jacoco-aggregate-report</module>
 
             <module>allure-junit-5</module>
@@ -522,7 +522,7 @@
          <modules>
             <module>parent-java</module>
             <module>parent-spring-5</module>
-            <module>parent-boot-2</module>
+            <module>parent-boot-3</module>
             <module>jacoco-aggregate-report</module>
 
             <module>allure-junit-5</module>
@@ -530,7 +530,7 @@
             <module>cobertura</module>
             <module>cucumber-1</module>
             <module>cucumber-2</module>
-            <module>cucumber-spring</module>
+            <!-- <module>cucumber-spring</module> -->
             <module>easy-random</module>
             <module>easymock</module>
             <module>gatling</module>
@@ -620,7 +620,7 @@
          <modules>
             <module>parent-java</module>
             <module>parent-spring-5</module>
-            <module>parent-boot-2</module>
+            <module>parent-boot-3</module>
          </modules>
       </profile>
    </profiles>
